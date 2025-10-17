@@ -5,14 +5,33 @@
   <title>dom</title>
 </head>
 <body>
-  <p>You Tube Subcribe Button</p>
+  <p>You Tube subscribe Button</p>
   <button onclick="
-       Subcribe();
+       subscribe();
        "class="js-suscribe-button"
   ">Subscribe</button>
+     <p>Amazon shipping calculator</p>
+     <input placeholder="cost of order" class="js-cost-input">
+      <button onclick="
+          calculateTotal();
+      ">calculate </button>
+      <p class="js-total-cost"></p>
+    
 
   <script>
-        function Subcribe(){
+          function calculateTotal(){
+           const inputElement=document.querySelector('.js-cost-input');
+           const cost=Number(inputElement.value);
+           
+
+
+             if(cost<40){
+                  cost=cost+10;
+                  console.log(cost);
+             }
+             document.querySelector('.js-total-cost').innerHTML=`$${cost}`;
+
+        function subscribe(){
             const buttonElement=document.queryselector('.js-subscribe-button') 
        
             if(buttonElement.innerText==='Subscribe'){
