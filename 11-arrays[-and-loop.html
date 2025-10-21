@@ -25,12 +25,108 @@
     myarray.slice(0 ,1);
     console.log(myarray)*/
 
-    let i=1;
+ /*  let i=1;
 
     while(1<=5){
       console.log(i);
       i++;)
-    }
+    }*/
+
+  /*  let r=0;
+    while(r<10){
+
+       while(t=r+1< 5){
+        console.log("*")
+        t++;
+       }
+       console.log('');
+       r++;
+    }*/
+
+/*
+    for(let i=1; i<5;1++){
+      for(j=i+1; j<5; j++){
+        console.log('*');
+      }
+     
+    }*/
+
+    /*
+let randomNumber=0;
+while(randomNumber<0.5)
+{
+  randomNumber=Math.random();
+  
+}
+console.log(randomNumber);
+*/
+
+/*
+const todoList = [
+  'make dinner',
+  'wash dish',
+  'watch youtube'
+];
+
+for(let index =0; index <=todoList.length;index++){
+  const value=todoList[index]
+  console.log(todoList[value]);
+}
+*/
+
+/*
+const nums=[1,1,3];
+const total=0;
+
+for(let i=0; i<nums.length; i++){
+  const num=nums[i];
+  total +=num;
+}
+console.log(total);
+
+const numsDoubled=[];
+for(let i=0; i<nums.length; i++){
+  const num=nums[i];
+  numsDoubled.push(num*2);
+}
+console.log(numsDoubled);
+*/
+
+const array1=[1,2,3];
+const array2=array1.slice();
+
+array2.push(4);
+console.log(array1);
+console.log(array2);
+
+
+const [fisrtValue]=[1,2,3];
+
+
+let i=1;
+
+while(i<10){
+  if(i%3 ===0){
+    i++;
+    continue;
+  }
+  console.log(i);
+  i++;
+}
+
+function doubleArray(nums){ 
+
+
+const numsDoubled=[];
+for(let i=0; i<nums.length; i++){
+  const num=nums[i];
+  numsDoubled.push(num*2);
+}
+console.log(numsDoubled);
+}
+doubleArray([1,1,3]);
+doubleArray([2,4,6]);
+
   </script>
   </body>
 </html>

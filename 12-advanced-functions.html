@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced function</title>
+
+</head>
+<body>
+ 
+<h2>click the button</h2>
+<button onclick="sayhello()">don't worry click me</button>
+
+
+<h1 id="click">hello</h1>
+<button onclick="changeText()">click me</button>
+
+<br>
+<input type="number" placeholder="enter the first number" id="input1">
+<br>
+<input type="number" placeholder="enter the second number" id="input2">
+
+<button onclick="addNumber()">add</button>
+<p id="result"></p><br>
+
+<h3 >advanced function</h3>
+
+
+
+
+  <script>
+  function greeting(){
+    console.log('hello');
+  }
+  greeting();
+
+  const function1=function greeting(){
+    console.log('hello2');
+  };
+  console.log(function1);
+
+  console.log(typeof function1);
+  function1();
+
+  const object1 ={
+      num:2,
+      fun:function greeting(){
+        console.log("hello3")
+      }
+  }
+  object1.fun();//9:38:00
+
+/*
+  function tocelsieus(frehenite){
+    return (5/9)*(frehenite-32);
+  }
+  let num=tocelsieus(70);
+  console.log(num);
+
+  myfunction=(a,b) => a*b;
+     let result=myfunction(4,5);
+
+     console.log(result);
+
+
+     function sum(...args) {
+  let sum = 0;
+  for (let arg of args) sum += arg;
+  return sum;
+}
+
+let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
+
+console.log(x);
+
+     //document.getElementById("demo").innerHTML= result;
+
+
+     function findMax(...numbers){
+      return Math.max(...numbers);
+     }
+     let y=findMax(1,2,55555,78,890,90);
+     console.log(y);
+
+     function sayhello(){
+      alert("hello fom javascript");
+     }
+
+
+
+     let arr=["banana", "karrots","avocado","apple"];
+         for(let i=0;i<arr.length;i++){
+          console.log(arr[i]);
+         }
+
+
+         let j=0;
+         while(j<arr.length){
+            console.log(arr[j]);
+            j++;
+         }
+
+
+         function changeText(){
+              document.getElementById("click").innerHTML="you clicked the button";
+         }
+
+
+         function addNumber(){
+          let a=Number(document.getElementById("input1").value);
+           let b=Number(document.getElementById("input2").value);
+           document.getElementById("result").innerHTML="result"+(a+b);
+         }
+
+         const fruits=["apple","avocado"]
+            fruits.push("mango");
+            function f(){
+                 for(let i=0;i<fruits.length;i++){
+          console.log(fruits[i]);
+         }
+            }
+          
+       fruits.unshift("onions");
+             f();
+             fruits.shift();
+             f();
+         fruits.pop();
+           f();    
+
+
+       //fruits.forEach(f=> console.log(f))
+    
+       */
+
+let num=[1,2,3];
+let doubled=num.map(x=> x*2);
+ console.log(doubled);
+
+ let nums=[1,2,3,4,5,6];
+ let evens=nums.filter(x=>x%2 === 0);
+ console.log(evens);
+
+
+ 
+  </script>
+  </body>
+</html>
